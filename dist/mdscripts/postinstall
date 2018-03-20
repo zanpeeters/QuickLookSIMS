@@ -1,0 +1,5 @@
+#!/bin/sh
+# SIMS.mdimporter post-install script
+# (c) 2018 Zan Peeters
+
+/usr/bin/mdimport -r "$2/Library/Spotlight/SIMS.mdimporter"

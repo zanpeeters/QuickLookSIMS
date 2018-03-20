@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D56DD55203F92D600058133 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56DD39203F892600058133 /* GetMetadataForFile.m */; };
+		2D56DD57203F92F800058133 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D56DD3A203F892600058133 /* main.c */; };
+		2D56DD58203F92FC00058133 /* schema.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D56DD3B203F892600058133 /* schema.xml */; };
+		2D56DD59203F92FF00058133 /* sims.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA406DE2036403400FA2048 /* sims.m */; };
+		2D56DD77203FA7A900058133 /* info.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D56DD5A203F94ED00058133 /* info.sh */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2D803B692054C0C200354F23 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D803B682054C0C200354F23 /* CoreFoundation.framework */; };
+		2D803B6B2054C0DB00354F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D803B6A2054C0DB00354F23 /* Foundation.framework */; };
+		2D803B6D2054C0E600354F23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D803B6C2054C0E600354F23 /* CoreGraphics.framework */; };
+		2D803B6F2054C0F900354F23 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D803B6E2054C0F900354F23 /* QuickLook.framework */; };
+		2D803B712054C0FF00354F23 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D803B702054C0FE00354F23 /* Accelerate.framework */; };
+		2D803B732054C1DE00354F23 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D803B722054C1DE00354F23 /* AppKit.framework */; };
+		2D803B752054C1FA00354F23 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D803B742054C1FA00354F23 /* CoreText.framework */; };
+		2D803B762054C3F800354F23 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D803B682054C0C200354F23 /* CoreFoundation.framework */; };
+		2D803B772054C3FF00354F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D803B6A2054C0DB00354F23 /* Foundation.framework */; };
+		2D803B792054C61200354F23 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D803B782054C61200354F23 /* CoreServices.framework */; };
+		2D803B852056D38500354F23 /* schema.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D56DD73203FA08D00058133 /* schema.strings */; };
+		2DA406E02036403400FA2048 /* sims.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA406DE2036403400FA2048 /* sims.m */; };
+		2DA406E12036403400FA2048 /* sims.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA406DF2036403400FA2048 /* sims.h */; };
+		2DE2F51C201D2026008F7579 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2F51B201D2026008F7579 /* GenerateThumbnailForURL.m */; };
+		2DE2F51E201D2026008F7579 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2F51D201D2026008F7579 /* GeneratePreviewForURL.m */; };
+		2DE2F520201D2026008F7579 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2F51F201D2026008F7579 /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		2D56DD7A203FB14D00058133 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist.strings;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyStrings\n";
+		};
+		2D803B812055A9C900354F23 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = "com.apple.build-tasks.copy-strings-file";
+			fileType = text.plist.strings;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyStrings\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D56DD76203FA77D00058133 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				2D56DD77203FA7A900058133 /* info.sh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D803B842056D37700354F23 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en.lproj;
+			dstSubfolderSpec = 7;
+			files = (
+				2D803B852056D38500354F23 /* schema.strings in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2D56DD39203F892600058133 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		2D56DD3A203F892600058133 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2D56DD3B203F892600058133 /* schema.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; };
+		2D56DD3C203F892600058133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D56DD4F203F8F3600058133 /* SIMS.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIMS.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D56DD5A203F94ED00058133 /* info.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = info.sh; sourceTree = "<group>"; };
+		2D56DD5F203F966600058133 /* QuickLookSIMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLookSIMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D56DD69203F966700058133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D56DD6C203F966700058133 /* app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = app.entitlements; sourceTree = "<group>"; };
+		2D56DD73203FA08D00058133 /* schema.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = schema.strings; sourceTree = "<group>"; };
+		2D803B682054C0C200354F23 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2D803B6A2054C0DB00354F23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2D803B6C2054C0E600354F23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2D803B6E2054C0F900354F23 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		2D803B702054C0FE00354F23 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		2D803B722054C1DE00354F23 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2D803B742054C1FA00354F23 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		2D803B782054C61200354F23 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		2DA406DE2036403400FA2048 /* sims.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sims.m; sourceTree = "<group>"; };
+		2DA406DF2036403400FA2048 /* sims.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sims.h; sourceTree = "<group>"; };
+		2DE2F518201D2026008F7579 /* SIMS.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIMS.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE2F51B201D2026008F7579 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		2DE2F51D201D2026008F7579 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		2DE2F51F201D2026008F7579 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2DE2F521201D2026008F7579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D56DD4C203F8F3600058133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D803B762054C3F800354F23 /* CoreFoundation.framework in Frameworks */,
+				2D803B772054C3FF00354F23 /* Foundation.framework in Frameworks */,
+				2D803B792054C61200354F23 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D56DD5C203F966600058133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE2F514201D2026008F7579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D803B692054C0C200354F23 /* CoreFoundation.framework in Frameworks */,
+				2D803B6B2054C0DB00354F23 /* Foundation.framework in Frameworks */,
+				2D803B6F2054C0F900354F23 /* QuickLook.framework in Frameworks */,
+				2D803B6D2054C0E600354F23 /* CoreGraphics.framework in Frameworks */,
+				2D803B712054C0FF00354F23 /* Accelerate.framework in Frameworks */,
+				2D803B752054C1FA00354F23 /* CoreText.framework in Frameworks */,
+				2D803B732054C1DE00354F23 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D56DD50203F8F3600058133 /* mdimporter */ = {
+			isa = PBXGroup;
+			children = (
+				2D803B7F2055A83200354F23 /* en.lproj */,
+				2D56DD39203F892600058133 /* GetMetadataForFile.m */,
+				2D56DD3C203F892600058133 /* Info.plist */,
+				2D56DD3A203F892600058133 /* main.c */,
+				2D56DD3B203F892600058133 /* schema.xml */,
+			);
+			path = mdimporter;
+			sourceTree = "<group>";
+		};
+		2D56DD60203F966600058133 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				2D56DD5A203F94ED00058133 /* info.sh */,
+				2D56DD69203F966700058133 /* Info.plist */,
+				2D56DD6C203F966700058133 /* app.entitlements */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		2D803B672054C0C200354F23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D803B782054C61200354F23 /* CoreServices.framework */,
+				2D803B742054C1FA00354F23 /* CoreText.framework */,
+				2D803B722054C1DE00354F23 /* AppKit.framework */,
+				2D803B702054C0FE00354F23 /* Accelerate.framework */,
+				2D803B6E2054C0F900354F23 /* QuickLook.framework */,
+				2D803B6C2054C0E600354F23 /* CoreGraphics.framework */,
+				2D803B6A2054C0DB00354F23 /* Foundation.framework */,
+				2D803B682054C0C200354F23 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D803B7F2055A83200354F23 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				2D56DD73203FA08D00058133 /* schema.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		2DE2F50E201D2026008F7579 = {
+			isa = PBXGroup;
+			children = (
+				2DE2F51A201D2026008F7579 /* qlgenerator */,
+				2D56DD50203F8F3600058133 /* mdimporter */,
+				2D56DD60203F966600058133 /* app */,
+				2DE2F519201D2026008F7579 /* Products */,
+				2D803B672054C0C200354F23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2DE2F519201D2026008F7579 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DE2F518201D2026008F7579 /* SIMS.qlgenerator */,
+				2D56DD4F203F8F3600058133 /* SIMS.mdimporter */,
+				2D56DD5F203F966600058133 /* QuickLookSIMS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DE2F51A201D2026008F7579 /* qlgenerator */ = {
+			isa = PBXGroup;
+			children = (
+				2DE2F51B201D2026008F7579 /* GenerateThumbnailForURL.m */,
+				2DE2F51D201D2026008F7579 /* GeneratePreviewForURL.m */,
+				2DA406DE2036403400FA2048 /* sims.m */,
+				2DA406DF2036403400FA2048 /* sims.h */,
+				2DE2F51F201D2026008F7579 /* main.c */,
+				2DE2F521201D2026008F7579 /* Info.plist */,
+			);
+			path = qlgenerator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2DE2F515201D2026008F7579 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA406E12036403400FA2048 /* sims.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D56DD4E203F8F3600058133 /* SIMS.mdimporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D56DD52203F8F3600058133 /* Build configuration list for PBXNativeTarget "SIMS.mdimporter" */;
+			buildPhases = (
+				2D56DD4B203F8F3600058133 /* Sources */,
+				2D56DD4C203F8F3600058133 /* Frameworks */,
+				2D56DD4D203F8F3600058133 /* Resources */,
+				2D803B842056D37700354F23 /* CopyFiles */,
+			);
+			buildRules = (
+				2D803B812055A9C900354F23 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = SIMS.mdimporter;
+			productName = SIMS.mdimporter;
+			productReference = 2D56DD4F203F8F3600058133 /* SIMS.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+		2D56DD5E203F966600058133 /* QuickLookSIMS.app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D56DD6D203F966700058133 /* Build configuration list for PBXNativeTarget "QuickLookSIMS.app" */;
+			buildPhases = (
+				2D56DD5B203F966600058133 /* Sources */,
+				2D56DD5C203F966600058133 /* Frameworks */,
+				2D56DD5D203F966600058133 /* Resources */,
+				2D56DD76203FA77D00058133 /* CopyFiles */,
+			);
+			buildRules = (
+				2D56DD7A203FB14D00058133 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = QuickLookSIMS.app;
+			productName = QuickLookSIMS.app;
+			productReference = 2D56DD5F203F966600058133 /* QuickLookSIMS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DE2F517201D2026008F7579 /* SIMS.qlgenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE2F524201D2026008F7579 /* Build configuration list for PBXNativeTarget "SIMS.qlgenerator" */;
+			buildPhases = (
+				2DE2F513201D2026008F7579 /* Sources */,
+				2DE2F514201D2026008F7579 /* Frameworks */,
+				2DE2F515201D2026008F7579 /* Headers */,
+				2DE2F516201D2026008F7579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SIMS.qlgenerator;
+			productName = SIMS.qlgenerator;
+			productReference = 2DE2F518201D2026008F7579 /* SIMS.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DE2F50F201D2026008F7579 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Zan Peeters";
+				TargetAttributes = {
+					2D56DD4E203F8F3600058133 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2D56DD5E203F966600058133 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2DE2F517201D2026008F7579 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2DE2F512201D2026008F7579 /* Build configuration list for PBXProject "QuickLookSIMS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2DE2F50E201D2026008F7579;
+			productRefGroup = 2DE2F519201D2026008F7579 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DE2F517201D2026008F7579 /* SIMS.qlgenerator */,
+				2D56DD4E203F8F3600058133 /* SIMS.mdimporter */,
+				2D56DD5E203F966600058133 /* QuickLookSIMS.app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D56DD4D203F8F3600058133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D56DD58203F92FC00058133 /* schema.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D56DD5D203F966600058133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE2F516201D2026008F7579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D56DD4B203F8F3600058133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D56DD57203F92F800058133 /* main.c in Sources */,
+				2D56DD59203F92FF00058133 /* sims.m in Sources */,
+				2D56DD55203F92D600058133 /* GetMetadataForFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D56DD5B203F966600058133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE2F513201D2026008F7579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA406E02036403400FA2048 /* sims.m in Sources */,
+				2DE2F51C201D2026008F7579 /* GenerateThumbnailForURL.m in Sources */,
+				2DE2F51E201D2026008F7579 /* GeneratePreviewForURL.m in Sources */,
+				2DE2F520201D2026008F7579 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2D56DD53203F8F3600058133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKP93H3W7;
+				INFOPLIST_FILE = "$(SRCROOT)/mdimporter/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.zan.SIMS.mdimporter;
+				PRODUCT_NAME = SIMS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		2D56DD54203F8F3600058133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKP93H3W7;
+				INFOPLIST_FILE = "$(SRCROOT)/mdimporter/Info.plist";
+				INSTALL_PATH = /mdroot/Library/Spotlight;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zan.SIMS.mdimporter;
+				PRODUCT_NAME = SIMS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		2D56DD6E203F966700058133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKP93H3W7;
+				INFOPLIST_FILE = "$(SRCROOT)/app/Info.plist";
+				INSTALL_PATH = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.zan.QuickLookSIMS.app;
+				PRODUCT_NAME = QuickLookSIMS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		2D56DD6F203F966700058133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKP93H3W7;
+				INFOPLIST_FILE = "$(SRCROOT)/app/Info.plist";
+				INSTALL_PATH = "/approot/Library/Application Support/$(PROJECT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.zan.QuickLookSIMS.app;
+				PRODUCT_NAME = QuickLookSIMS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		2DE2F522201D2026008F7579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2DE2F523201D2026008F7579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: zan@lavabit.com (GHZ2X4P25T)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "$(SOURCE_ROOT)/dist";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2DE2F525201D2026008F7579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKP93H3W7;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"QUICKLOOKGENERATOR=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/qlgenerator/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.zan.SIMS.qlgenerator;
+				PRODUCT_NAME = SIMS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		2DE2F526201D2026008F7579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PKP93H3W7;
+				GCC_PREPROCESSOR_DEFINITIONS = "QUICKLOOKGENERATOR=1";
+				INFOPLIST_FILE = "$(SRCROOT)/qlgenerator/Info.plist";
+				INSTALL_PATH = /qlroot/Library/QuickLook;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zan.SIMS.qlgenerator;
+				PRODUCT_NAME = SIMS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D56DD52203F8F3600058133 /* Build configuration list for PBXNativeTarget "SIMS.mdimporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D56DD53203F8F3600058133 /* Debug */,
+				2D56DD54203F8F3600058133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D56DD6D203F966700058133 /* Build configuration list for PBXNativeTarget "QuickLookSIMS.app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D56DD6E203F966700058133 /* Debug */,
+				2D56DD6F203F966700058133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE2F512201D2026008F7579 /* Build configuration list for PBXProject "QuickLookSIMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE2F522201D2026008F7579 /* Debug */,
+				2DE2F523201D2026008F7579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE2F524201D2026008F7579 /* Build configuration list for PBXNativeTarget "SIMS.qlgenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE2F525201D2026008F7579 /* Debug */,
+				2DE2F526201D2026008F7579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DE2F50F201D2026008F7579 /* Project object */;
+}

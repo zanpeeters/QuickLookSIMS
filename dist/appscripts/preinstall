@@ -1,0 +1,5 @@
+#!/bin/sh
+# QuickLookSIMS.app pre-install script
+# (c) 2018 Zan Peeters
+
+rm -rf "$2/Library/Application Support/QuickLookSIMS/QuickLookSIMS.app"

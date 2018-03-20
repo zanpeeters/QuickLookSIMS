@@ -1,0 +1,16 @@
+/* 
+  schema.strings
+  SIMS.mdimporter
+
+  Created by Zan Peeters on 22-02-2018.
+  Copyright © 2018 Zan Peeters. All rights reserved.
+*/
+
+"com_cameca_sims_raster" = "Raster size (µm)";
+"com_cameca_sims_raster.Description" = "Physical size of the rastered image in µm";
+"com_cameca_sims_frames" = "Frames";
+"com_cameca_sims_frames.Description" = "Number of frames (cycles, planes)";
+"com_cameca_sims_masses" = "Masses";
+"com_cameca_sims_masses.Description" = "Number of masses";
+"com_cameca_sims_labels" = "Labels";
+"com_cameca_sims_labels.Description" = "Labels for each mass";

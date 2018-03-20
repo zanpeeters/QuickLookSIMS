@@ -1,0 +1,5 @@
+#!/bin/sh
+# QuickLookSIMS.app post-install script
+# (c) 2018 Zan Peeters
+
+/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -f "$2/Library/Application Support/QuickLookSIMS/QuickLookSIMS.app"

@@ -1,0 +1,6 @@
+#!/bin/sh
+# SIMS.qlgenerator post-install script
+# (c) 2018 Zan Peeters
+
+/System/Library/Frameworks/QuickLook.framework/Resources/quicklookd.app/Contents/MacOS/qlmanage -r
+/System/Library/Frameworks/QuickLook.framework/Resources/quicklookd.app/Contents/MacOS/qlmanage -r cache

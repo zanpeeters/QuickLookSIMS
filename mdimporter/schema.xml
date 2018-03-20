@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema version="1.0" xmlns="http://www.apple.com/metadata"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.apple.com/metadata
+    file:///System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Resources/MetadataSchema.xsd">
+    <attributes>
+            <attribute name="com_cameca_sims_raster" type="CFNumber" />
+            <attribute name="com_cameca_sims_frames" type="CFNumber" />
+            <attribute name="com_cameca_sims_masses" type="CFNumber" />
+            <attribute name="com_cameca_sims_labels" type="CFString" multivalued="true" />
+    </attributes>
+    <types>
+        <type name="com.cameca.sims.depthprofile">
+            <allattrs>
+                kMDItemPixelHeight
+                kMDItemPixelWidth
+                com_cameca_sims_raster
+                com_cameca_sims_frames
+                com_cameca_sims_masses
+                com_cameca_sims_labels
+                kMDItemBitsPerSample
+            </allattrs>
+            <displayattrs>
+                kMDItemPixelHeight
+                kMDItemPixelWidth
+                com_cameca_sims_labels
+                com_cameca_sims_raster
+                com_cameca_sims_frames
+                com_cameca_sims_masses
+            </displayattrs>
+        </type>
+        <type name="com.cameca.sims.hmr">
+            <allattrs>
+                kMDItemPixelHeight
+                kMDItemPixelWidth
+                com_cameca_sims_raster
+                com_cameca_sims_frames
+                com_cameca_sims_masses
+                com_cameca_sims_labels
+                kMDItemBitsPerSample
+            </allattrs>
+            <displayattrs>
+                kMDItemPixelHeight
+                kMDItemPixelWidth
+                com_cameca_sims_labels
+                com_cameca_sims_raster
+                com_cameca_sims_frames
+                com_cameca_sims_masses
+            </displayattrs>
+        </type>
+        <type name="com.cameca.sims.image">
+            <allattrs>
+                kMDItemPixelHeight
+                kMDItemPixelWidth
+                com_cameca_sims_raster
+                com_cameca_sims_frames
+                com_cameca_sims_masses
+                com_cameca_sims_labels
+                kMDItemBitsPerSample
+            </allattrs>
+            <displayattrs>
+                kMDItemPixelHeight
+                kMDItemPixelWidth
+                com_cameca_sims_labels
+                com_cameca_sims_raster
+                com_cameca_sims_frames
+                com_cameca_sims_masses
+            </displayattrs>
+        </type>
+        <type name="com.cameca.sims.isotope">
+            <allattrs>
+                kMDItemPixelHeight
+                kMDItemPixelWidth
+                com_cameca_sims_raster
+                com_cameca_sims_frames
+                com_cameca_sims_masses
+                com_cameca_sims_labels
+                kMDItemBitsPerSample
+            </allattrs>
+            <displayattrs>
+                kMDItemPixelHeight
+                kMDItemPixelWidth
+                com_cameca_sims_labels
+                com_cameca_sims_raster
+                com_cameca_sims_frames
+                com_cameca_sims_masses
+            </displayattrs>
+        </type>
+        <type name="com.cameca.sims.linescan">
+            <allattrs>
+                kMDItemPixelHeight
+                kMDItemPixelWidth
+                com_cameca_sims_raster
+                com_cameca_sims_frames
+                com_cameca_sims_masses
+                com_cameca_sims_labels
+                kMDItemBitsPerSample
+            </allattrs>
+            <displayattrs>
+                kMDItemPixelHeight
+                kMDItemPixelWidth
+                com_cameca_sims_labels
+                com_cameca_sims_raster
+                com_cameca_sims_frames
+                com_cameca_sims_masses
+            </displayattrs>
+        </type>
+    </types>
+</schema>
