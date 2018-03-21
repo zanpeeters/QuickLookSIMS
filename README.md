@@ -24,7 +24,7 @@ Finally, as a nice side effect of the Spotlight importer, all the text-based fil
 Installation
 ============
 
-Download the lastest installer here: [QuickLookSIMS.pkg](https://github.com/zanpeeters/QuickLookSIMS/dist/QuickLookSIMS.pkg). QuickLookSIMS requires macOS 10.7 or newer.
+Download the lastest installer here: [QuickLookSIMS.pkg](https://github.com/zanpeeters/QuickLookSIMS/blob/master/dist/QuickLookSIMS.pkg). QuickLookSIMS requires macOS 10.7 or newer.
 
 After installation, it may take a while before Spotlight has indexed your SIMS files. Close all Finder windows and wait a few minutes. If you still don't see any change after 5-10 min, you may need to force quit Finder (menu bar > Apple icon > Force Quit > Finder) or reboot your computer.
 
