@@ -5,3 +5,6 @@ dist/approot/
 dist/mdroot/
 dist/qlroot/
 
+QuickLookSIMS.xcodeproj/project.xcworkspace
+QuickLookSIMS.xcodeproj/xcuserdata/
+

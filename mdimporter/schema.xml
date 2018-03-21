@@ -8,6 +8,7 @@
             <attribute name="com_cameca_sims_frames" type="CFNumber" />
             <attribute name="com_cameca_sims_masses" type="CFNumber" />
             <attribute name="com_cameca_sims_labels" type="CFString" multivalued="true" />
+            <attribute name="com_cameca_sims_displaylabels" type="CFString" multivalued="true" />
     </attributes>
     <types>
         <type name="com.cameca.sims.depthprofile">
@@ -18,12 +19,13 @@
                 com_cameca_sims_frames
                 com_cameca_sims_masses
                 com_cameca_sims_labels
+                com_cameca_sims_displaylabels
                 kMDItemBitsPerSample
             </allattrs>
             <displayattrs>
                 kMDItemPixelHeight
                 kMDItemPixelWidth
-                com_cameca_sims_labels
+                com_cameca_sims_displaylabels
                 com_cameca_sims_raster
                 com_cameca_sims_frames
                 com_cameca_sims_masses
@@ -37,12 +39,13 @@
                 com_cameca_sims_frames
                 com_cameca_sims_masses
                 com_cameca_sims_labels
+                com_cameca_sims_displaylabels
                 kMDItemBitsPerSample
             </allattrs>
             <displayattrs>
                 kMDItemPixelHeight
                 kMDItemPixelWidth
-                com_cameca_sims_labels
+                com_cameca_sims_displaylabels
                 com_cameca_sims_raster
                 com_cameca_sims_frames
                 com_cameca_sims_masses
@@ -56,12 +59,13 @@
                 com_cameca_sims_frames
                 com_cameca_sims_masses
                 com_cameca_sims_labels
+                com_cameca_sims_displaylabels
                 kMDItemBitsPerSample
             </allattrs>
             <displayattrs>
                 kMDItemPixelHeight
                 kMDItemPixelWidth
-                com_cameca_sims_labels
+                com_cameca_sims_displaylabels
                 com_cameca_sims_raster
                 com_cameca_sims_frames
                 com_cameca_sims_masses
@@ -75,12 +79,13 @@
                 com_cameca_sims_frames
                 com_cameca_sims_masses
                 com_cameca_sims_labels
+                com_cameca_sims_displaylabels
                 kMDItemBitsPerSample
             </allattrs>
             <displayattrs>
                 kMDItemPixelHeight
                 kMDItemPixelWidth
-                com_cameca_sims_labels
+                com_cameca_sims_displaylabels
                 com_cameca_sims_raster
                 com_cameca_sims_frames
                 com_cameca_sims_masses
@@ -94,12 +99,13 @@
                 com_cameca_sims_frames
                 com_cameca_sims_masses
                 com_cameca_sims_labels
+                com_cameca_sims_displaylabels
                 kMDItemBitsPerSample
             </allattrs>
             <displayattrs>
                 kMDItemPixelHeight
                 kMDItemPixelWidth
-                com_cameca_sims_labels
+                com_cameca_sims_displaylabels
                 com_cameca_sims_raster
                 com_cameca_sims_frames
                 com_cameca_sims_masses

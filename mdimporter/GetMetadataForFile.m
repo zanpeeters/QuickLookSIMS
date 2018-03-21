@@ -28,6 +28,8 @@ Boolean GetMetadataForFile(void* thisInterface,
                           forKey:(NSString *)kMDItemPixelWidth];
                 [attrs setObject:sims.labels
                           forKey:@"com_cameca_sims_labels"];
+                [attrs setObject:sims.displayLabels
+                          forKey:@"com_cameca_sims_displaylabels"];
                 [attrs setObject:[[NSNumber alloc] initWithFloat:sims.raster]
                           forKey:@"com_cameca_sims_raster"];
                 [attrs setObject:[[NSNumber alloc] initWithInt:sims.masses]

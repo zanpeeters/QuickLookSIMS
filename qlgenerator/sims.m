@@ -220,11 +220,13 @@ static const NSDictionary *subscripts = nil;
     //    4 byte int (index) + 61 bytes + 64 byte string (label) + 63 bytes
     int trolleyIndex;
     self.labels = [[NSMutableArray alloc] initWithCapacity:self.masses];
+    self.displayLabels = [[NSMutableArray alloc] initWithCapacity:self.masses];
     for (int m=0; m < self.masses; m++) {
         trolleyIndex = [self readInt:(mass_pos + m * 192)];
         NSString *label = [[NSString alloc] initWithData: [self.data subdataWithRange:NSMakeRange(mass_pos + 65 + m * 192, 64)]
                                                 encoding: NSISOLatin1StringEncoding];
         label = [label stringByTrimmingCharactersInSet: trimset];
+        [self.labels addObject: label];
         
         // Handle charge separately.
         NSString *charge = @"";
@@ -274,7 +276,7 @@ static const NSDictionary *subscripts = nil;
         if (trolleyIndex == 8) {
             displayLabel = @"SE";
         }
-        [self.labels addObject: displayLabel];
+        [self.displayLabels addObject: displayLabel];
     }
 
     // For image types, pertinent information is stored in the ImageHeader,
@@ -603,13 +605,13 @@ static const NSDictionary *subscripts = nil;
     NSDictionary *fontAttributes = @{NSFontAttributeName: [NSFont systemFontOfSize:FONTSIZE]};
     CGContextSetTextMatrix(master, CGAffineTransformMakeScale(1.0, -1.0));
     float xpos, ypos;
-    for (NSString *lbl in self.labels) {
+    for (NSString *lbl in self.displayLabels) {
         CFAttributedStringRef string = CFAttributedStringCreate(kCFAllocatorDefault,
                                                                 (__bridge CFStringRef)lbl,
                                                                 (__bridge CFDictionaryRef)fontAttributes);
         CTLineRef line = CTLineCreateWithAttributedString(string);
         CGRect bounds = CTLineGetImageBounds(line, master);
-        unsigned long m = [self.labels indexOfObject:lbl];
+        unsigned long m = [self.displayLabels indexOfObject:lbl];
         col = (int)m % cols;
         row = (int)m/cols;
         xpos = col * (self.width + COLSEP) + self.width/2 - bounds.size.width/2;

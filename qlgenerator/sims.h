@@ -52,6 +52,7 @@ enum FileTypes {
 
 @property NSData *data;
 @property NSMutableArray *labels;
+@property NSMutableArray *displayLabels;
 
 @property int32_t fileType;
 @property bool needByteSwap;

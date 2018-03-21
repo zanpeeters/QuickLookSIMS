@@ -12,5 +12,7 @@
 "com_cameca_sims_frames.Description" = "Number of frames (cycles, planes)";
 "com_cameca_sims_masses" = "Masses";
 "com_cameca_sims_masses.Description" = "Number of masses";
+"com_cameca_sims_displaylabels" = "Labels";
+"com_cameca_sims_displaylabels.Description" = "Labels for each mass, formatted with UTF-8 sub- and superscripts";
 "com_cameca_sims_labels" = "Labels";
-"com_cameca_sims_labels.Description" = "Labels for each mass";
+"com_cameca_sims_labels.Description" = "Labels for each mass, ASCII text only";

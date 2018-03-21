@@ -4,6 +4,30 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>MDImporter</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.cameca.sims.depthprofile</string>
+				<string>com.cameca.sims.depthprofile.export</string>
+				<string>com.cameca.sims.hmr</string>
+				<string>com.cameca.sims.hmr.export</string>
+				<string>com.cameca.sims.image</string>
+				<string>com.cameca.sims.image.check</string>
+				<string>com.cameca.sims.isotope</string>
+				<string>com.cameca.sims.isotope.check</string>
+				<string>com.cameca.sims.isotope.export</string>
+				<string>com.cameca.sims.isotope.stats</string>
+				<string>com.cameca.sims.linescan</string>
+				<string>com.cameca.sims.linescan.check</string>
+				<string>com.cameca.sims.linescan.export</string>
+				<string>com.cameca.sims.nmr</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,41 +39,13 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2018 Zan Peeters. All rights reserved.</string>
-	<key>NSPrincipalClass</key>
-	<string></string>
-	<key>CFBundleDocumentTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>MDImporter</string>
-			<key>LSItemContentTypes</key>
-			<array>
-                <string>com.cameca.sims.depthprofile</string>
-                <string>com.cameca.sims.depthprofile.export</string>
-				<string>com.cameca.sims.hmr</string>
-                <string>com.cameca.sims.hmr.export</string>
-				<string>com.cameca.sims.image</string>
-				<string>com.cameca.sims.image.check</string>
-				<string>com.cameca.sims.isotope</string>
-				<string>com.cameca.sims.isotope.check</string>
-				<string>com.cameca.sims.isotope.export</string>
-				<string>com.cameca.sims.isotope.stats</string>
-                <string>com.cameca.sims.linescan</string>
-                <string>com.cameca.sims.linescan.check</string>
-                <string>com.cameca.sims.linescan.export</string>
-				<string>com.cameca.sims.nmr</string>
-			</array>
-		</dict>
-	</array>
-	<key>CFPlugInDynamicRegistration</key>
-	<false/>
+	<string>1.1</string>
 	<key>CFPlugInDynamicRegisterFunction</key>
 	<string></string>
+	<key>CFPlugInDynamicRegistration</key>
+	<false/>
 	<key>CFPlugInFactories</key>
 	<dict>
 		<key>D7598135-5EEF-4D86-ABCC-862538F14877</key>
@@ -64,15 +60,19 @@
 	</dict>
 	<key>CFPlugInUnloadFunction</key>
 	<string></string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2018 Zan Peeters. All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string></string>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS depth profile data</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.data</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS depth profile data</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.depthprofile</string>
 			<key>UTTypeTagSpecification</key>
@@ -84,12 +84,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS depth profile data exported</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.text</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS depth profile data exported</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.depthprofile.export</string>
 			<key>UTTypeTagSpecification</key>
@@ -101,12 +101,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS high mass resolution scan</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.data</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS high mass resolution scan</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.hmr</string>
 			<key>UTTypeTagSpecification</key>
@@ -118,12 +118,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS high mass resolution scan exported</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.text</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS high mass resolution scan exported</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.hmr.export</string>
 			<key>UTTypeTagSpecification</key>
@@ -135,12 +135,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS image data</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.data</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS image data</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.image</string>
 			<key>UTTypeTagSpecification</key>
@@ -152,12 +152,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS image centering info</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.text</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS image centering info</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.image.check</string>
 			<key>UTTypeTagSpecification</key>
@@ -169,12 +169,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS isotope data</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.data</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS isotope data</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.isotope</string>
 			<key>UTTypeTagSpecification</key>
@@ -186,12 +186,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS isotope centering info</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.text</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS isotope centering info</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.isotope.check</string>
 			<key>UTTypeTagSpecification</key>
@@ -203,12 +203,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS isotope data exported</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.text</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS isotope data exported</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.isotope.export</string>
 			<key>UTTypeTagSpecification</key>
@@ -220,12 +220,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS isotope summary</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.text</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS isotope summary</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.isotope.stats</string>
 			<key>UTTypeTagSpecification</key>
@@ -238,12 +238,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS linescan data</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.data</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS linescan data</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.linescan</string>
 			<key>UTTypeTagSpecification</key>
@@ -255,12 +255,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS linescan centering info</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.text</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS linescan centering info</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.linescan.check</string>
 			<key>UTTypeTagSpecification</key>
@@ -272,12 +272,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS linescan data exported</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.text</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS linescan data exported</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.linescan.export</string>
 			<key>UTTypeTagSpecification</key>
@@ -289,12 +289,12 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>UTTypeDescription</key>
-			<string>SIMS NMR info</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.text</string>
 			</array>
+			<key>UTTypeDescription</key>
+			<string>SIMS NMR info</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.cameca.sims.nmr</string>
 			<key>UTTypeTagSpecification</key>
